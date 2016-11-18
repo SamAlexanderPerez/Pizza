@@ -1,24 +1,23 @@
-class pizza{
-  //type constructor below
+class Pizza{
+
   constructor(s,mt,vt){
     this.size=s;
-    this.meatToppings=mt;
+    this.meatToppings=mt;//array with name of toppings
     this.veggieToppings=vt;
   }
 
 
-  //type instance functions below
 sizeCost(){
-  if(this.size="S"){
+  if(this.size=S){
     return 7.99;
   }
-  else if(this.size="M"){
+  else if(this.size=M){
     return 9.99;
   }
-  else if(this.size="L"){
+  else if(this.size=L){
     return 12.99;
   }
-  else if(this.size="XL"){
+  else if(this.size=XL){
     return 15.99;
   }
 }
@@ -33,10 +32,10 @@ toppingCost(top){
 }
 
 price(){
-  return this.sizeCost()+this.toppingCost(top);
+  return this.sizeCost()+this.toppingCost("meat")+this.toppingCost("veggie");
 }
 
-  //type class functions below
+
 static promotionalDeal(Pizza,percent){
   var deal= Pizza*percent;
   return Pizza-deal;
