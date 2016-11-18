@@ -35,6 +35,25 @@ price(){
   return this.sizeCost()+this.toppingCost("meat")+this.toppingCost("veggie");
 }
 
+addToppings(toptype,newtop){
+  if(toptype=="meat"){
+    meatToppings.push[newtop];
+  }
+  else if(toptype=="veggie"){
+    veggieToppings.push[newtop];
+  }
+}
+
+removeTopping(toptype,newtop){
+  if(toptype=="meat"){
+    meatToppings.indexOf(newtop);
+    meatToppings.splice()
+  }
+  else if(toptype=="veggie"){
+    veggieToppings.indexOf(newtoop);
+    
+  }
+}
 
 static promotionalDeal(Pizza,percent){
   var deal= Pizza*percent;
